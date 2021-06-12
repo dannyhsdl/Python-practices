@@ -1,0 +1,7 @@
+ # _*_ coding: UTF-8 _*_
+ a=["apple","banana","orange","pear","potato","tomato"]
+ for i in range(i,len(a)+1):
+     j=". "+str(a[i-1])
+     k=str(i)
+     l=str(k)+str(j)
+     print(l)
