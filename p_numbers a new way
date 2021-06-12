@@ -1,0 +1,18 @@
+# This is another way to find out prime numbers.
+# Okay, let's get started
+print("The prime numbers in the range from 2000 to 3000:")
+mylist=[]
+for i in range(2000,3000):
+    for j in range(2,i):
+        if i%j==0:
+            break
+    else:
+        mylist.append(i)
+for k in range(1,len(mylist)+1):# notice len(mylist)+1, and think about it.
+    l=str(k)
+    m=". "+str(mylist[k-1]) # mylist[k-1]
+    n=str(l)+str(m)
+    print(n)
+p=str(len(mylist))
+p1="There are "+p+" prime numbers."
+print(p1)
