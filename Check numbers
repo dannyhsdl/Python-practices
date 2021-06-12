@@ -1,0 +1,35 @@
+# coding=utf-8
+# odd numbers,even numbers,prime numbers from 1000 to 2000, let's get started
+totalnum=[] # this is a list, find out its function
+oddnum=[]
+evenum=[]
+primenum=[]
+for i in range(1000,2001):
+	totalnum.append(i) # put some things into a list called totalnum line 11 line 13 line 18
+	if i%2!=0:
+		oddnum.append(i)
+	if i%2==0:
+		evenum.append(i)
+	for j in range(2,i):
+		if i%j==0:
+			break
+	else:
+		primenum.append(i)
+totalnum="There are "+str(len(totalnum))+" numbers in total from 1000 to 2000."
+print(totalnum)
+d="There are "
+a0=str(len(oddnum))+" odd numbers"
+b0=str(len(evenum))+" even numbers"
+c0=str(len(primenum))+" prime numbers"
+print(d+a0)
+for a in range(1,len(oddnum)+1): # think about it why it is len(oddnum)+1 line30 and line 34
+	a1=str(a)+". "+str(oddnum[a-1]) # the important thing here is oddnum[a-1] line 31 and line 35
+	print(a1)
+print(d+b0)
+for b in range(1,len(evenum)+1):
+	b1=str(b)+". "+str(evenum[b-1])
+	print(b1)
+print(d+c0)
+for c in range(1,len(primenum)+1):
+	c1=str(c)+". "+str(primenum[c-1])
+	print(c1)
